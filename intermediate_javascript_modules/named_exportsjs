@@ -1,0 +1,25 @@
+let availableAirplanes = [{
+ name: 'AeroJet',
+ fuelCapacity: 800,
+ //new obj
+ availableStaff: ['pilots', 'flightAttendants', 'engineers', 'medicalAssistance', 'sensorOperators'],
+}, 
+{name: 'SkyJet',
+ fuelCapacity: 500,
+ //new obj
+ availableStaff: ['pilots', 'flightAttendants']
+}];
+//new var
+let flightRequirements = {
+  requiredStaff: 4,
+};
+//use if else statement 
+function meetsStaffRequirements(availableStaff, requiredStaff) {
+  if (availableStaff.length >= requiredStaff) {
+    return true;
+  } else {
+    return false;
+  }
+};
+//export
+export { availableAirplanes, flightRequirements, meetsStaffRequirements};
